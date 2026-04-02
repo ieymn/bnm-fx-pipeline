@@ -32,11 +32,12 @@ Base URL: `https://apikijangportal.bnm.gov.my`
 
 | Endpoint | Data | Updates |
 |---|---|---|
-| `/fx` | Daily interbank exchange rates (USD, EUR, GBP, SGD, etc.) | Daily |
+| `/exchange-rate` | Daily interbank exchange rates (USD, EUR, GBP, SGD, etc.) | Daily |
 | `/interest-rate` | OPR, base rates, BLR | On change |
+| `/opr` |Official Overnight Policy Rate (Monetary Policy) | On change |
 | `/interbank-swap` | Interbank swap volume and rates | Daily |
-| `/islamic-banking` | Islamic banking assets, deposits, financing | Monthly |
-| `/consumer-alert` | Unauthorised companies and schemes list | As published |
+| `kijang-emas` | Buying and selling prices for gold bullion coins | daily |
+
 
 ---
 
@@ -119,8 +120,6 @@ These are SQL questions I want to explore using this data. Some came from my own
 
 **Banking**
 - Which sector received the highest volume of approved loans last year?
-- What is the ratio of Islamic vs conventional banking assets?
-- How has Islamic banking financing grown year over year?
 
 **Consumer protection**
 - How many new unauthorised companies were added to the alert list this year?
