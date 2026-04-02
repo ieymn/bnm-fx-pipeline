@@ -120,8 +120,6 @@ These are SQL questions I want to explore using this data. Some came from my own
 
 **Banking**
 - Which sector received the highest volume of approved loans last year?
-- What is the ratio of Islamic vs conventional banking assets?
-  
 
 **Consumer protection**
 - How many new unauthorised companies were added to the alert list this year?
