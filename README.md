@@ -159,7 +159,7 @@ Each script has one job. If the transformer breaks, the extractor still works. T
 
 ## Roadmap
 
-- [ ] Add historical backfill on first run
+- [✔] Add historical backfill on first run
 - [ ] Add data quality checks (null values, out-of-range rates)
 - [ ] Build a simple dashboard from the stored data
 - [ ] Migrate to PostgreSQL
