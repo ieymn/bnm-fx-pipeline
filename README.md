@@ -62,6 +62,7 @@ bnm-fx-pipeline/
 │   ├── extractor.py       # Fetches data from all BNM endpoints
 │   ├── transformer.py     # Cleans and validates with pandas
 │   └── loader.py          # Writes clean data to SQLite
+│   └── backfill.py        # Feteches 1year historical data
 ├── data/
 │   └── bnm.db             # SQLite database (auto-created on first run)
 ├── analysis/
@@ -96,7 +97,16 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### 4. Schedule daily runs (Linux / macOS)
+## 4.How to run backfill
+
+To load historical data (run once only):
+
+```bash
+cd src
+python backfill.py
+```
+
+### 5. Schedule daily runs (Linux / macOS)
 
 ```bash
 crontab -e
