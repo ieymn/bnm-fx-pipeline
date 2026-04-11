@@ -110,24 +110,25 @@ crontab -e
 
 These are SQL questions I want to explore using this data. Some came from my own curiosity about the Malaysian market, others from researching what kinds of questions financial analysts typically ask of this type of data.
 
-**Exchange rates**
-- What was the highest USD/MYR rate this month?
-- How has the MYR performed against major currencies over the last year?
+**Interbank swap**
 
-**Monetary policy**
-- How many times has the OPR changed in the last 5 years?
-- What is the trend of base lending rates over time?
+-Which tenure has the highest average transaction volume?
+-How has the overnight swap volume trended month by month?
 
-**Banking**
-- Which sector received the highest volume of approved loans last year?
+**Interest rate**
 
-**Consumer protection**
-- How many new unauthorised companies were added to the alert list this year?
-- Which months see the highest number of new alerts published?
+-What has the overnight interest rate been over the past year?
+-Which months had the highest overnight rate in 2025?
 
-**Macroeconomic**
-- Identify months where the inflation rate (CPI) exceeded 3.5%
-- Compare federal government debt growth rate against GDP growth
+**OPR**
+
+-How many times did the OPR change in 2025?
+-What is the trend of OPR levels from 2025 to 2026?
+
+**Kijang Emas**
+
+-What was the highest gold buying price for 1oz in the past year?
+-Which gold weight has the highest average profit margin?
 
 ---
 

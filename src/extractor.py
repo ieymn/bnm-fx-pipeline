@@ -1,17 +1,18 @@
 import requests
-import pandas as pd
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = "https://api.bnm.gov.my/public"
 
 HEADERS  = {"Accept": "application/vnd.BNM.API.v1+json"}
 
 ENDPOINTS = {
-    "exchange_rate"  : "/exchange-rate?session=0900&quote=rm",
+    "exchange_rate"  : "/exchange-rate",
     "interest_rate"  : "/interest-rate?product=money_market_operations",
     "interbank_swap" : "/interbank-swap",
     "opr"            : "/opr",
     "kijang_emas"    : "/kijang-emas"
-
 }
 
 
@@ -27,7 +28,7 @@ def fetch_endpoint(endpoint):
     """
     url = BASE_URL + endpoint
     print(f'Fetching {url}')
-    response = requests.get(url, headers = HEADERS, timeout = 10)
+    response = requests.get(url, headers=HEADERS, timeout=10, verify=False)
     response.raise_for_status()
     return response.json()
 
